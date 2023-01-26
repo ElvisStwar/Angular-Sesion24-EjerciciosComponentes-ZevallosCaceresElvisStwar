@@ -1,0 +1,15 @@
+
+<mat-form-field class="example-full-width">
+    <mat-label>¿Cuál es tu nombre?</mat-label>
+    <input matInput [(ngModel)]="names">
+</mat-form-field><br>
+<button mat-raised-button color="primary" (click)="abrirDialog()">Abrir dialogo</button>
+
+<div style="margin-top: 15%;" *ngIf="animals">
+    <h4>Hola {{names}} tu animal favorito es el/la {{animals}}</h4>
+</div>
+    
+
+
+
+

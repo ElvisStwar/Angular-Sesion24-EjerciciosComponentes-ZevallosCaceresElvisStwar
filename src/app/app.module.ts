@@ -16,13 +16,22 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { DialogComponent } from './dialog/dialog.component';
+import { MatDialogModule} from '@angular/material/dialog';
+import { ContenidoDialogComponent } from './contenido-dialog/contenido-dialog.component';
+import { CuadroDialogComponent } from './cuadro-dialog/cuadro-dialog.component';
+import { MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     DashboardComponent,
-    DialogComponent
+    DialogComponent,
+    ContenidoDialogComponent,
+    CuadroDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +45,11 @@ import { DialogComponent } from './dialog/dialog.component';
     MatListModule,
     MatGridListModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
